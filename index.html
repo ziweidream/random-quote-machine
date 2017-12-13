@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <title>A Random Quote Machine</title>
+</head>
+
+<body>
+  <div>
+    <h1 class="text-center">Click and get inspired!</h1>
+    <div id="button" class="text-center"><button class="btn btn-success btn-lg" onclick="newQuote()">New Quote</button></div>
+    <div id="container"></div>
+    <div id="quoteDisplay" class="text-center">
+      <h1><!-- Quotes will display here --></h1>
+    </div>
+    <div id="authorQuote" class="text-center">
+      <h1><!-- Author's name goes here --></h1>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
