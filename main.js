@@ -39,8 +39,8 @@ var quotes = [
 
 function newQuote() {
   var randomNumber = Math.floor(Math.random() * quotes.length);
-  document.getElementById("quoteDisplay").innerHTML = quotes[randomNumber][0];
-  document.getElementById("authorQuote").innerHTML = quotes[randomNumber][1];
+  $("#quoteDisplay").html(quotes[randomNumber][0]);
+  $("#authorQuote").html(quotes[randomNumber][1]);
   $("#container").empty();
   twttr.widgets.createShareButton("/", document.getElementById("container"), {text: quotes[randomNumber][0] + quotes[randomNumber][1]
   });
